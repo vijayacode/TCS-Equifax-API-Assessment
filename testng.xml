@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ApiAutomationRestAssured">
+	<parameter name="BaseURI" value="http://dummy.restapiexample.com/api/v1" />
+	<parameter name="EmpId" value="24" />
+	<test name="Sanity test">
+		<classes>
+			<class name="com.api.automation.GetRequest">
+				<methods>
+					<include name="getRequest" />
+				</methods>
+			</class>
+			<class name="com.api.automation.DeleteRequest">
+				<methods>
+					<include name="deleteRequest" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite>
+                    
